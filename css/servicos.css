@@ -1,0 +1,43 @@
+ * {
+     margin: 0;
+     padding: 0;
+
+ }
+
+ header {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     background-color: white;
+
+ }
+
+
+ .menuCabecalho li {
+     display: inline-block;
+     padding: 10px 40;
+     margin: 30px;
+     width: 70px;
+     height: 20px;
+
+     padding: 10px;
+ }
+
+ h1 {
+     margin: 30px;
+ }
+
+ h2 {
+     margin: 15px;
+ }
+
+ p {
+     margin: 10px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: 16px;
+
+ }
+
+ .img-logo {
+     width: 150px;
+ }
