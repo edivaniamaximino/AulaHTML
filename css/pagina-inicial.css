@@ -1,6 +1,7 @@
  * {
      margin: 0;
      padding: 0;
+     background-color: white;
 
  }
 
@@ -8,7 +9,7 @@
      display: flex;
      justify-content: space-around;
      align-items: center;
-     background-color: white;
+     background-image: radial-gradient(center);
 
  }
 
@@ -19,7 +20,7 @@
      margin: 30px;
      width: 70px;
      height: 20px;
-
+    
      padding: 10px;
  }
 

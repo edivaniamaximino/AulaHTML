@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    width: 100%;
+    padding: 10px 5%;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.img-logo {
+    width: 140px;
+    transition: 0.3s ease-in-out;
+}
+
+.img-logo:hover {
+    transform: scale(1.05);
+}
+
+
+.menuCabecalho {
+    list-style: none;
+}
+
+.menuCabecalho li {
+    display: inline-block;
+    margin: 0 18px;
+}
+
+.menuCabecalho a {
+    text-decoration: none;
+    color: #013a63;
+    font-weight: 600;
+    padding: 6px 10px;
+    transition: 0.3s ease;
+    border-radius: 4px;
+}
+
+.menuCabecalho a:hover {
+    background: #00a8e8;
+    color: #fff;
+}
+
+
+h1 {
+    margin: 40px auto 10px;
+    font-size: 2.4rem;
+    color: #012a4a;
+    text-align: center;
+}
+
+h2 {
+    margin: 10px auto 20px;
+    font-size: 1.2rem;
+    color: #014f86;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+p {
+    margin: 15px auto;
+    max-width: 900px;
+    text-align: center;
+    font-size: 1rem;
+    color: #444;
+    padding: 0 15px;
+}
+
+
+img.img-servicos,
+img.img-sobre {
+    width: 80%;
+    max-width: 650px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+img.img-index,
+img.img-contato {
+    width: 100%;
+    max-width: 1200px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Cards de Serviços */
+.services-preview {
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: #012a4a;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 25px;
+    padding: 10px;
+}
+
+.service-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.12);
+}
+
+.service-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.service-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.service-content h3 {
+    color: #013a63;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.service-content p {
+    font-size: 0.98rem;
+    color: #555;
+}
+
+
+.form-container {
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-container h2 {
+    color: #013a63;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 13px 16px;
+    border: 1.5px solid #d1dce6;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.25s ease;
+    outline: none;
+    background: #fafbfc;
+    font-family: inherit;
+    color: #1a1a1a;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #013a63;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}
+
+button.enviar-contato {
+    padding: 12px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background: #013a63;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+button.enviar-contato:hover {
+    background: #00a8e8;
+}
+
+
+footer {
+    width: 100%;
+    padding: 15px 0;
+    background: #012a4a;
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+footer p {
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .menuCabecalho li {
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .img-logo {
+        width: 110px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .menuCabecalho li {
+        margin: 5px;
+    }
+
+    .form-container {
+        padding: 18px;
+    }
+}
